@@ -5,7 +5,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://e-commerce-frontend-f9t1.vercel.app'],
+      origin: ['https://e-commerce-frontend-alpha.vercel.app'],
       // other CORS options...
     },
   },
