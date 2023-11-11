@@ -1,7 +1,14 @@
+// middleware.js
 module.exports = [
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['https://e-commerce-frontend-f9t1.vercel.app'],
+      // other CORS options...
+    },
+  },
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
